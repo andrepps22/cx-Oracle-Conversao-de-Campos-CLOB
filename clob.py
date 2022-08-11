@@ -27,12 +27,12 @@ def connOra(user, password, host, select_ora):
             return cursor.var(cx_Oracle.DB_TYPE_LONG, arraysize=cursor.arraysize)
 
     conn.outputtypehandler = output_type_handler
-    
+
     start = datetime.datetime.now()
     cursor.execute(select_ora)
-    
+
     while True:
-        
+
         row = cursor.fetchone()
         if not row:
             break
@@ -42,14 +42,10 @@ def connOra(user, password, host, select_ora):
 
         with open(diretorio + row[1], "wb+") as f:
             f.write(bt)
-        
 
-       
     conn.close()
-    
-    
-   
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     print('Inicio do processo')
     connOra(user, password, host, select_ora)
