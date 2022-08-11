@@ -1,3 +1,8 @@
+##########################################
+###   Desenvolvido por Andre de Paula ####
+###          DT 10/08/2022            ####
+##########################################
+
 from query import select_ora
 import base64
 import cx_Oracle
