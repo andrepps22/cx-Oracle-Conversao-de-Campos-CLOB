@@ -2,4 +2,4 @@
 
 Codigo feito em python para converter campos CLOB para arquivos.
 
-arquivos query.py server para inserir o SELECT do Oracle.
+arquivos query.py server para inserir o SELECT do Oracle para buscar os campos CLOB.
